@@ -257,11 +257,45 @@ console.log('Clone:', jessicaClone);
 // calcAge(1991);
 // // printAge();
 
-console.log(me);
-console.log(job);
-console.log(year);
+// console.log(me);
+// console.log(job);
+// console.log(year);
 
-var me = 'Jonas';
-let job = 'teacher';
-const year = 1991;
+// var me = 'Jonas';
+// let job = 'teacher';
+// const year = 1991;
 
+// console.log(this);
+
+// const calcAge = function(birthYear) {
+//   // console.log(2037 - birthYear);
+//   // console.log(this);
+// };
+
+// calcAge(1991);
+
+// const calAgeArrow = birthYear => {
+//   // console.log(2037 - birthYear);
+//   // console.log(this);
+// }
+
+// calAgeArrow(1980);
+
+// const jonas =  {
+//   year : 1991,
+//   calcAge : function(){
+//     console.log(this);
+//     console.log(this.year);
+//   }
+// }
+// jonas.calcAge();
+
+// const matilda = {
+//   year: 2017,
+// };
+
+// matilda.calcAge = jonas.calcAge;
+// matilda.calcAge();
+
+// const f = jonas.calcAge;
+// f();
