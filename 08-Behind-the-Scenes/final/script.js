@@ -299,3 +299,67 @@ console.log('Clone:', jessicaClone);
 
 // const f = jonas.calcAge;
 // f();
+
+// var firstName = 'Matilda';
+
+
+
+const jonas =  {
+  firstName: 'Jonas',
+  year : 1991,
+  calcAge : function(){
+    // console.log(this);
+    console.log(2037-this.year);
+
+    // const self = this;
+    // const isMillenial = function(){
+    //   console.log(self.year >= 1981 && self.year<= 1996);
+    // };
+
+      const hi = () => {
+      // Arrow function inherits 'this' from calcAge's context
+      console.log(`Testing${this.year}`);
+
+      const morning = 20;
+
+      const goodMorning = () => {
+        console.log(`Good Morning! ${this.firstName}, morning is ${this.morning}`);
+        console.log(this); // Let's inspect what 'this' is here
+      };
+      goodMorning();
+
+    };
+    hi();
+
+    const self = this;
+    const isMillenial = function(){
+      console.log(self.year >= 1981 && self.year<= 1996);
+    };
+
+    isMillenial();
+
+  },
+
+  greet: ()=> {
+    
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
+
+
+  }
+};
+
+jonas.greet();
+jonas.calcAge();
+
+//Arguments keyword
+const addExpr = function (a,b){
+  console.log(arguments);
+  return a+b;
+}; 
+
+addExpr(2,5);
+addExpr(2,5,8,12);
+
+var addArrow = (a,b) => a+b
+
